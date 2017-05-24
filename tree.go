@@ -7,8 +7,6 @@ import (
 	"io"
 	"log"
 	"strings"
-
-	logg "github.com/sirupsen/logrus"
 )
 
 // Node struct, represent a name tree
@@ -20,9 +18,6 @@ type Node struct {
 
 // New return a new tree with given root element at the top of the tree
 func New(root string) *Node {
-	logg.WithFields(logg.Fields{
-		"root": root,
-	}).Info("[NameTree] New() new name tree with")
 	return &Node{
 		component: root,
 	}
