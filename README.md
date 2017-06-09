@@ -9,7 +9,7 @@ package main
 import (
 	"log"
 
-	"github.com/elmiomar/named-data/name-tree"
+	"github.com/elmiomar/name-tree"
 )
 
 // example of fib entry
