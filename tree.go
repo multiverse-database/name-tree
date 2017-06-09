@@ -117,7 +117,8 @@ func (n *Node) walkTree(components []string) (*Node, string, int) {
 			if component == child.component {
 				next := components[1:]
 				if len(next) > 0 {
-					return child.walkTree(next) // tail recursion is it's own reward.
+					// recursive call
+					return child.walkTree(next) 
 				}
 				return child, component, len(n.children)
 			}
